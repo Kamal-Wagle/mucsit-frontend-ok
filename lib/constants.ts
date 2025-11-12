@@ -1,6 +1,6 @@
-export const SITE_NAME = "MUCISIT"
+export const SITE_NAME = "MUCSIT"
 export const SITE_DESCRIPTION = "Your Academic Resource Hub - Access notes, assignments, old questions, and blogs"
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mucisit.edu"
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://mucsit.edu"
 
 export const NAVIGATION_LINKS = [
   { href: "/", label: "Home" },

@@ -7,11 +7,11 @@ import { MapPin, Phone, Mail, BookOpen, Users, Target, Award } from "lucide-reac
 export const metadata: Metadata = {
   title: "About MUCISIT - Mid-West University School of Information Technology",
   description:
-    "Learn about Mid-West University (MWU), School of Information Technology (MUC-SIT) in Surkhet, Nepal. Explore our mission, vision, faculties, and comprehensive academic resources for BSc CSIT students.",
+    "Learn about Mid-West University (MWU), School of Information Technology (MU-CSIT) in Surkhet, Nepal. Explore our mission, vision, faculties, and comprehensive academic resources for BSc CSIT students.",
   keywords: [
     "Mid-West University",
     "MWU Surkhet",
-    "MUC-SIT",
+    "MU-CSIT",
     "BSc CSIT",
     "School of Information Technology",
     "Nepal",
@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     "Computer Science",
     "Karnali Province",
   ],
-  authors: [{ name: "MUCISIT" }],
+  authors: [{ name: "MUCSIT" }],
   openGraph: {
-    title: "About MUCISIT - Mid-West University School of Information Technology",
+    title: "About MUCSIT - Mid-West University School of Information Technology",
     description:
       "Mid-West University (MWU) is a public autonomous institution in Surkhet, Nepal offering BSc CSIT and other programs through the School of Information Technology.",
     type: "website",
-    url: "https://mucisit.vercel.app/about",
-    siteName: "MUCISIT",
+    url: "https://mucsit.vercel.app/about",
+    siteName: "MUCSIT",
     locale: "en_US",
     images: [
       {
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About MUCISIT - Mid-West University",
-    description: "Discover Mid-West University and MUC-SIT, offering quality education in Computer Science and IT.",
+    title: "About MUCSIT - Mid-West University",
+    description: "Discover Mid-West University and MU-CSIT, offering quality education in Computer Science and IT.",
   },
   robots: {
     index: true,
@@ -59,8 +59,8 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   name: "Mid-West University, School of Information Technology",
-  alternateName: ["MWU", "MUC-SIT", "MUCISIT"],
-  url: "https://mucisit.vercel.app",
+  alternateName: ["MWU", "MU-CSIT", "MUCSIT"],
+  url: "https://mucsit.vercel.app",
   logo: "/logo.png",
   description:
     "School of Information Technology offering BSc CSIT and educational resources for students at Mid-West University in Surkhet, Nepal.",
@@ -218,14 +218,14 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* About MUCISIT */}
+        {/* About MUCSIT */}
         <section className="bg-slate-50 py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-foreground mb-8 text-balance">About MUC-SIT</h2>
+            <h2 className="text-4xl font-bold text-foreground mb-8 text-balance">About MU-CSIT</h2>
             <Card>
               <CardContent className="pt-6 space-y-4 text-muted-foreground">
                 <p>
-                  The School of Information Technology (MUC-SIT) is part of the Faculty of Science & Technology at
+                  The School of Information Technology (MU-CSIT) is part of the Faculty of Science & Technology at
                   Mid-West University, offering specialized programs in information technology and computer science.
                 </p>
                 <p>

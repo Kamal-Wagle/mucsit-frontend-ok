@@ -39,12 +39,9 @@ export function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
+            {/* Logo - Visible on all screens including mobile */}
             <Link href="/" className="flex items-center gap-2 shrink-0">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">M</span>
-              </div>
-              <span className="hidden sm:inline font-bold text-lg text-foreground">{SITE_NAME}</span>
+              <span className="font-bold text-lg text-foreground">{SITE_NAME}</span>
             </Link>
 
             {/* Desktop Navigation */}
