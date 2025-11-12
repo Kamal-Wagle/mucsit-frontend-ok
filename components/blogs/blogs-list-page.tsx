@@ -58,7 +58,7 @@ export function BlogsListPage() {
           seoKeywords: item.seoKeywords,
           readTimeMinutes: item.readTimeMinutes,
           image: item.image,
-          author: item.author?.name,
+          author: typeof item.author === "string" ? item.author : item.author?.name,
           semester: item.semester,
         }))
         setBlogs(mappedBlogs)

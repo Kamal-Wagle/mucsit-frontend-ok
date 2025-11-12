@@ -13,7 +13,11 @@ interface Blog {
   description?: string
   sections?: Array<{ text: string; imageUrl?: string; _id: string }>
   content?: string
-  author?: any
+  author?: {
+    _id: string
+    email: string
+    name: string
+  } | string
   publishedAt?: string
   createdAt?: string
   seoKeywords?: string[]
@@ -85,7 +89,9 @@ export function BlogDetailPage({ blog, id }: BlogDetailPageProps) {
             {blog.author && (
               <div className="flex items-center gap-2">
                 <User className="w-4 h-4" />
-                <span className="font-semibold text-foreground">{blog.author}</span>
+                <span className="font-semibold text-foreground">
+                  {typeof blog.author === "string" ? blog.author : blog.author.name}
+                </span>
               </div>
             )}
             {formattedDate && (

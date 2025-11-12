@@ -20,11 +20,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blog = response.data
   const publishDate = blog.publishedAt || blog.createdAt
 
+  const authorName = blog.author
+    ? typeof blog.author === "string"
+      ? blog.author
+      : blog.author.name
+    : undefined
+
   return {
     title: `${blog.title} - MUCISIT Blog`,
     description: blog.excerpt || blog.description || "Read expert insights on MUCISIT blog.",
     keywords: blog.tags || ["education", "learning", "MUCISIT"],
-    authors: blog.author ? [{ name: blog.author }] : [],
+    authors: authorName ? [{ name: authorName }] : [],
     openGraph: {
       title: blog.title,
       description: blog.excerpt || blog.description,

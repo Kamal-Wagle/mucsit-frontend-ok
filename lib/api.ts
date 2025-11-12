@@ -33,7 +33,7 @@ export interface Assignment {
   imageUrl?: string
   seoKeywords: string[]
   seoDescription: string
-  author?: any
+  author?: { _id: string; email: string; name: string } | string
   totalMarks: number
   difficulty: "easy" | "medium" | "hard"
   isPublished: boolean
@@ -79,7 +79,7 @@ export interface Blog {
   fileUrl?: string
   seoKeywords: string[]
   seoDescription: string
-  author?: any
+  author?: { _id: string; email: string; name: string } | string
   views: number
   likes: number
   isPublished: boolean
